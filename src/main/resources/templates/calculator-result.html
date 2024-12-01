@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+</head>
+<body>
+    <h1>Resultado de la Operación</h1>
+    <p><strong>Número 1:</strong> <span th:text="${calculator.number1}"></span></p>
+    <p><strong>Número 2:</strong> <span th:text="${calculator.number2}"></span></p>
+    <p><strong>Operación:</strong> 
+        <span th:if="${calculator.operation == 'add'}">Suma</span>
+        <span th:if="${calculator.operation == 'subtract'}">Resta</span>
+        <span th:if="${calculator.operation == 'multiply'}">Multiplicación</span>
+        <span th:if="${calculator.operation == 'divide'}">División</span>
+    </p>
+    <p><strong>Resultado:</strong> <span th:text="${calculator.result}"></span></p>
+    <a href="/calculator">Volver</a>
+</body>
+</html>
