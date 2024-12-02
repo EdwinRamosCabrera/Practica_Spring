@@ -11,8 +11,8 @@ public class HomeController {
 
     @GetMapping("/")
     public String index(Model model){
-        model.addAttribute("message", "¡Bienvenido a mi aplicación con Spring Boot y Thymeleaf!");
-        return "home";
+        model.addAttribute("message", "¡Bienvenido a mi aplicación con Spring Boot y Thymeleaf 😄!");
+        return "home/home";
     }
 
 }
